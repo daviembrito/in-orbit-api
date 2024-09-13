@@ -15,6 +15,13 @@
       "when": 1726202121884,
       "tag": "0001_simple_electro",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1726247796865,
+      "tag": "0002_outgoing_fenris",
+      "breakpoints": true
     }
   ]
 }
