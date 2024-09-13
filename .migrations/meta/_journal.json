@@ -8,6 +8,13 @@
       "when": 1726201298660,
       "tag": "0000_flashy_mesmero",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1726202121884,
+      "tag": "0001_simple_electro",
+      "breakpoints": true
     }
   ]
 }
