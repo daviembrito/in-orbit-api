@@ -16,7 +16,12 @@ export async function getWeekPendingGoals() {
                 createdAt: goal.createdAt,
             })
             .from(goal)
-            .where(lte(goal.createdAt, lastDayOfTheWeek))
+            .where(
+                and(
+                    gte(goal.createdAt, firstDayOfTheWeek),
+                    lte(goal.createdAt, lastDayOfTheWeek)
+                )
+            )
     )
 
     const goalCompletionCountOnTheWeek = db
