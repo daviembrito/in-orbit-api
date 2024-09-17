@@ -8,8 +8,13 @@ import { createGoalRoute } from './routes/create-goal-route'
 import { getPendingGoalsRoute } from './routes/get-pending-goals-route'
 import { createGoalCompletionRoute } from './routes/create-goal-completion-route'
 import { getWeekSummaryRoute } from './routes/get-week-summary-route'
+import fastifyCors from '@fastify/cors'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
+
+app.register(fastifyCors, {
+    origin: '*',
+})
 
 app.setValidatorCompiler(validatorCompiler)
 app.setSerializerCompiler(serializerCompiler)
